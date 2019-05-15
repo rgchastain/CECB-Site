@@ -1,0 +1,188 @@
+.main_h {
+	 position: fixed;
+	 top: 0px;
+	 max-height: 70px;
+  	z-index: 1;
+  	width: 100%;
+  	padding-top: 17px;
+  	background: none;
+  	overflow: hidden;
+  	-webkit-transition: all 0.3s;
+  	transition: all 0.3s;
+  	opacity: 0;
+  	top: -100px;
+  	padding-bottom: 6px;
+  	font-family: "Montserrat", sans-serif;
+}
+
+* {
+	background-color: black;
+	color: grey;
+  /*font-family: "sans-serif", cursive;*/
+  font-family: 'Merienda';
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  .main_h {
+    padding-top: 0px;
+  }
+}
+
+.sticky {
+  background-color: black;
+  opacity: .9;
+  top: 0px;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding-left: 0px;
+  margin-left: -10px;
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobiletoggle {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+nav {
+  list-style: none;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+}
+@media only screen and (max-width: 850px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  align-content: center;
+  padding-left: 0px;
+}
+@media only screen and (max-width: 850px) {
+  nav ul {
+    padding-top: 25px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+nav ul li:hover {
+  color: white;
+  transform: rotate(4deg);
+}
+
+@media only screen and (max-width: 850px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+    display: block;
+  }
+}
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: white;
+}
+
+.mobiletoggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 10;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 850px) {
+  .mobiletoggle {
+    display: block;
+  }
+}
+.mobiletoggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+video {
+  width: 100%
+}
+
+.images {
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  max-width: 1400px;
+  }
+
+
+.img_box {
+  height: 250px;
+  width: 350px;
+  display: inline-block;
+}
+
+.img_box img {
+  height: 250px;
+  width: 350px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+
+.img_box img:hover {
+  height: 250px;
+  width: 350px;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+
+
+footer {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+  color: #8f8f8f;
+  text-align: center;
+  border-top: 1px solid gainsboro;
+  height: 30px;
+}
+
+footer p {
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 0px;
+}

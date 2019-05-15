@@ -1,0 +1,273 @@
+.main_h {
+	position: fixed;
+	top: 0px;
+	max-height: 70px;
+  	z-index: 1;
+  	width: 100%;
+  	padding-top: 17px;
+  	background: none;
+  	overflow: hidden;
+  	-webkit-transition: all 0.3s;
+  	transition: all 0.3s;
+  	opacity: 0;
+  	top: -100px;
+  	padding-bottom: 6px;
+  	
+}
+
+* {
+	background-color: black;
+	color: grey;
+	/*font-family: "sans-serif", cursive;*/
+  font-family: 'Merienda';
+}
+
+h1 {
+	border-bottom: 3px solid grey;
+}
+
+@media only screen and (max-width: 850px) {
+
+}
+
+@media only screen and (max-width: 850px) {
+  .main_h {
+    padding-top: 0px;
+  }
+}
+
+.sticky {
+  background-color: black;
+  opacity: .9;
+  top: 0px;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding-left: 0px;
+  margin-left: -10px;
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobiletoggle {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+nav {
+  list-style: none;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+}
+@media only screen and (max-width: 850px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+	align-content: center;
+	padding-left: 0px;
+}
+@media only screen and (max-width: 850px) {
+  nav ul {
+    padding-top: 25px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+nav ul li:hover {
+	color: white;
+	transform: rotate(4deg);
+}
+
+@media only screen and (max-width: 850px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+    display: block;
+  }
+}
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: white;
+}
+
+.mobiletoggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 10;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 850px) {
+  .mobiletoggle {
+    display: block;
+  }
+}
+.mobiletoggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.hero {
+  position: relative;
+  background: url("../images/img2.jpg") no-repeat bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 0px;
+  margin-left: 0px;
+  background-color: transparent;
+}
+.hero span {
+  font-size: 25px;
+  line-height: 1.3;
+  background-color: transparent;
+}
+
+.hero img {
+	padding-top: 100px;
+	height: 200px
+	width: 400px;
+	background-color: transparent;
+}
+
+.main_b {
+	font-size: 25px;
+}
+
+@media only screen and (max-width: 850px) {
+	.main_b {
+	font-size: 20px;
+}
+}
+
+.main_b .info, .accom, .connect, .featured {
+	margin: auto 100px;
+}
+
+@media only screen and (max-width: 850px) {
+	.main_b .info, .accom, .connect, .featured {
+	margin: auto;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.main_b {
+		margin: auto;
+	}
+}
+
+.info {
+	text-align: center;
+}
+
+.parallax {
+    min-height: 430px;
+    background: transparent;
+}
+
+.accom {
+	text-align: center;
+}
+
+.benefits {
+	display: inline-block;
+	max-width: 350px;
+	text-align: center;
+	vertical-align: top;
+	margin: 0px;
+	padding: 0px;
+}
+
+.benefits ul {
+	text-align: left;
+	list-style-type: circle;
+	margin-top: 0px
+}
+
+.benefits ul li {
+	padding-bottom: 8px;
+}
+
+.connect {
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.social {
+	display: inline-block;
+	padding: 20px 20px;
+  opacity:0;
+}
+
+.social i {
+	font-size: 75px;
+}
+
+.social i:hover {
+	transform: rotate(10deg);
+}
+
+.social img:hover {
+	transform: scale(1.15);
+	/*transform: translateZ(100px) rotate(3deg);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);*/
+}
+
+.featured {
+	text-align: center;
+	margin-top: 100px;
+}
+
+footer {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+  color: #8f8f8f;
+  text-align: center;
+  border-top: 1px solid gainsboro;
+  height: 30px;
+}
+
+footer p {
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 0px;
+}
+
